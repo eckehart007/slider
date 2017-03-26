@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.127" altunitdist="mm" altunit="mm"/>
+<grid distance="1.27" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="1.27" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -163,8 +163,7 @@
 <vertex x="11.87189375" y="-5.07574375"/>
 <vertex x="10.345225" y="-7.631478125"/>
 </polygon>
-<circle x="0" y="0" radius="31" width="0.127" layer="39"/>
-<circle x="0" y="0" radius="31" width="0.127" layer="40"/>
+<circle x="0" y="0" radius="31" width="0.127" layer="41"/>
 <smd name="A" x="-1.8" y="0" dx="1.6" dy="1.4" layer="16" rot="R90"/>
 <smd name="K" x="1.8" y="0" dx="1.6" dy="1.4" layer="16" rot="R270"/>
 <hole x="0" y="0" drill="2"/>
@@ -178,10 +177,8 @@
 <wire x1="-0.5" y1="2" x2="-1" y2="2" width="0.127" layer="22"/>
 <text x="-1.5" y="1.5" size="1.016" layer="22" rot="SMR0">A (+)</text>
 <text x="1.5" y="2.5" size="1.016" layer="22" rot="SMR180">K (-)</text>
-<dimension x1="0.345653125" y1="27.997865625" x2="-0.345653125" y2="-27.997865625" x3="40.5" y3="-0.5" textsize="1.27" layer="20" dtype="diameter"/>
 <smd name="SP1" x="0.5" y="19.5" dx="1.27" dy="0.635" layer="1" stop="no"/>
 <smd name="SP2" x="-17.5" y="-10" dx="1.27" dy="0.635" layer="1" stop="no"/>
-<smd name="P$3" x="-17" y="-10" dx="1.27" dy="0.635" layer="1" stop="no"/>
 <smd name="SP3" x="17" y="-10" dx="1.27" dy="0.635" layer="1" stop="no"/>
 </package>
 </packages>
@@ -658,7 +655,7 @@ W = angled&lt;p&gt;
 </class>
 </classes>
 <parts>
-<part name="SL1" library="SLIDER" deviceset="SLIDER" device=""/>
+<part name="SL1" library="SLIDER" deviceset="SLIDER" device="" value="SLIDER"/>
 <part name="SV2" library="con-lsta" deviceset="FE06-1" device="" value="FemaleHeader"/>
 <part name="H1" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
 <part name="H2" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
@@ -680,46 +677,55 @@ W = angled&lt;p&gt;
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="3V3" class="0">
 <segment>
 <pinref part="SV2" gate="G$1" pin="6"/>
 <pinref part="SL1" gate="G$1" pin="LED_A"/>
 <wire x1="58.42" y1="64.77" x2="67.31" y2="64.77" width="0.1524" layer="91"/>
+<label x="59.69" y="64.77" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="GND" class="0">
 <segment>
 <pinref part="SV2" gate="G$1" pin="5"/>
 <pinref part="SL1" gate="G$1" pin="LED_K"/>
 <wire x1="58.42" y1="62.23" x2="67.31" y2="62.23" width="0.1524" layer="91"/>
+<label x="59.69" y="62.23" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="CT" class="0">
 <segment>
 <pinref part="SV2" gate="G$1" pin="4"/>
 <pinref part="SL1" gate="G$1" pin="CT"/>
 <wire x1="58.42" y1="59.69" x2="67.31" y2="59.69" width="0.1524" layer="91"/>
+<label x="59.69" y="59.69" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="N$7" class="0">
 <segment>
-<pinref part="SV2" gate="G$1" pin="3"/>
 <pinref part="SL1" gate="G$1" pin="SP1"/>
-<wire x1="58.42" y1="57.15" x2="67.31" y2="57.15" width="0.1524" layer="91"/>
+<wire x1="67.31" y1="57.15" x2="66.04" y2="57.15" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="57.15" x2="60.96" y2="52.07" width="0.1524" layer="91"/>
+<pinref part="SV2" gate="G$1" pin="1"/>
+<wire x1="60.96" y1="52.07" x2="58.42" y2="52.07" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="N$13" class="0">
 <segment>
+<pinref part="SL1" gate="G$1" pin="SP3"/>
+<wire x1="66.04" y1="52.07" x2="67.31" y2="52.07" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="52.07" x2="63.5" y2="54.61" width="0.1524" layer="91"/>
 <pinref part="SV2" gate="G$1" pin="2"/>
-<pinref part="SL1" gate="G$1" pin="SP2"/>
-<wire x1="58.42" y1="54.61" x2="67.31" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="54.61" x2="58.42" y2="54.61" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="SV2" gate="G$1" pin="1"/>
-<pinref part="SL1" gate="G$1" pin="SP3"/>
-<wire x1="58.42" y1="52.07" x2="67.31" y2="52.07" width="0.1524" layer="91"/>
+<pinref part="SL1" gate="G$1" pin="SP2"/>
+<wire x1="67.31" y1="54.61" x2="64.77" y2="54.61" width="0.1524" layer="91"/>
+<pinref part="SV2" gate="G$1" pin="3"/>
+<wire x1="64.77" y1="54.61" x2="62.23" y2="57.15" width="0.1524" layer="91"/>
+<wire x1="62.23" y1="57.15" x2="58.42" y2="57.15" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
