@@ -874,6 +874,7 @@ W = angled&lt;p&gt;
 <wire x1="58.42" y1="62.23" x2="67.31" y2="62.23" width="0.1524" layer="91"/>
 <wire x1="44.45" y1="62.23" x2="58.42" y2="62.23" width="0.1524" layer="91"/>
 <pinref part="SL1" gate="G$1" pin="LED_K"/>
+<junction x="58.42" y="62.23"/>
 </segment>
 </net>
 <net name="CT" class="0">
@@ -911,6 +912,10 @@ W = angled&lt;p&gt;
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,67.31,64.77,SL1,LED_A,3V3,,,"/>
+<approved hash="104,1,67.31,62.23,SL1,LED_K,GND,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
