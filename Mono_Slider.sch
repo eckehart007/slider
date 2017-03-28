@@ -450,7 +450,6 @@
 <package name="SLIDER_SMALL">
 <circle x="0" y="0" radius="10" width="0.4" layer="21"/>
 <circle x="0" y="0" radius="25" width="0.4" layer="21"/>
-<dimension x1="0" y1="-25" x2="0" y2="25" x3="-32" y3="0" textsize="1.27" layer="47" dtype="diameter"/>
 <polygon width="0.127" layer="1">
 <vertex x="-2.5" y="9.5"/>
 <vertex x="-2.5" y="9.8" curve="110"/>
@@ -841,7 +840,7 @@ W = angled&lt;p&gt;
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="A" class="0">
 <segment>
 <pinref part="SL1" gate="G$1" pin="LED_A"/>
 <wire x1="74.93" y1="67.31" x2="74.93" y2="73.66" width="0.1524" layer="91"/>
@@ -849,7 +848,7 @@ W = angled&lt;p&gt;
 <wire x1="74.93" y1="73.66" x2="63.5" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="K" class="0">
 <segment>
 <pinref part="SL1" gate="G$1" pin="LED_K"/>
 <wire x1="74.93" y1="64.77" x2="72.39" y2="64.77" width="0.1524" layer="91"/>
@@ -871,7 +870,7 @@ W = angled&lt;p&gt;
 <wire x1="66.04" y1="49.53" x2="66.04" y2="46.99" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="CP" class="0">
 <segment>
 <pinref part="SL1" gate="G$1" pin="CT"/>
 <wire x1="74.93" y1="62.23" x2="66.04" y2="62.23" width="0.1524" layer="91"/>
@@ -880,7 +879,7 @@ W = angled&lt;p&gt;
 <wire x1="66.04" y1="59.69" x2="63.5" y2="59.69" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="SP1" class="0">
 <segment>
 <pinref part="SL1" gate="G$1" pin="SP1"/>
 <wire x1="74.93" y1="59.69" x2="68.58" y2="59.69" width="0.1524" layer="91"/>
@@ -889,7 +888,7 @@ W = angled&lt;p&gt;
 <wire x1="68.58" y1="57.15" x2="63.5" y2="57.15" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="SP2" class="0">
 <segment>
 <pinref part="SL1" gate="G$1" pin="SP2"/>
 <wire x1="74.93" y1="57.15" x2="71.12" y2="57.15" width="0.1524" layer="91"/>
@@ -898,7 +897,7 @@ W = angled&lt;p&gt;
 <wire x1="71.12" y1="54.61" x2="63.5" y2="54.61" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="SP3" class="0">
 <segment>
 <pinref part="SL1" gate="G$1" pin="SP3"/>
 <wire x1="74.93" y1="54.61" x2="73.66" y2="54.61" width="0.1524" layer="91"/>
