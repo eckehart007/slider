@@ -555,8 +555,8 @@
 <smd name="SP3" x="2.54" y="27.94" dx="0.4064" dy="0.4064" layer="1" roundness="100" stop="no" thermals="no" cream="no"/>
 <circle x="0" y="0" radius="27" width="0.4064" layer="41"/>
 <hole x="0" y="0" drill="2"/>
-<smd name="A" x="-1.8" y="0" dx="1.6" dy="1.4" layer="16" rot="R90"/>
-<smd name="K" x="1.8" y="0" dx="1.6" dy="1.4" layer="16" rot="R90"/>
+<smd name="A" x="-2" y="0" dx="1.6" dy="1.4" layer="16" rot="R90"/>
+<smd name="K" x="2" y="0" dx="1.6" dy="1.4" layer="16" rot="R90"/>
 <wire x1="-0.635" y1="3.175" x2="-0.635" y2="2.54" width="0.4064" layer="22"/>
 <wire x1="-0.635" y1="2.54" x2="-0.635" y2="1.905" width="0.4064" layer="22"/>
 <wire x1="-0.635" y1="1.905" x2="0.635" y2="2.54" width="0.4064" layer="22"/>
@@ -565,8 +565,8 @@
 <wire x1="-1.27" y1="2.54" x2="-0.635" y2="2.54" width="0.4064" layer="22"/>
 <wire x1="0.635" y1="2.54" x2="0.635" y2="3.175" width="0.4064" layer="22"/>
 <wire x1="0.635" y1="2.54" x2="1.27" y2="2.54" width="0.4064" layer="22"/>
-<text x="-1.905" y="1.905" size="1.27" layer="22" rot="MR0">(+) K</text>
-<text x="5.715" y="1.905" size="1.27" layer="22" rot="MR0">(-) A</text>
+<text x="-1.905" y="1.905" size="1.27" layer="22" rot="MR0"></text>
+<text x="5.715" y="1.905" size="1.27" layer="22" rot="MR0">  </text>
 <smd name="CP" x="-3.81" y="5.08" dx="1.27" dy="0.635" layer="1" stop="no" thermals="no" cream="no"/>
 <circle x="0" y="0" radius="7.5" width="0.127" layer="21"/>
 <polygon width="0.127" layer="1">
