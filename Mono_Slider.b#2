@@ -556,7 +556,7 @@ design rules under a new name.</description>
 <vertex x="56" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
-<polygon width="0.3" layer="16" pour="hatch">
+<polygon width="0.1778" layer="16" spacing="1.778" pour="hatch">
 <vertex x="0" y="56.1"/>
 <vertex x="56" y="56.1"/>
 <vertex x="56" y="0"/>
