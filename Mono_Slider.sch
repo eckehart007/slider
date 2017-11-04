@@ -910,8 +910,10 @@ W = angled&lt;p&gt;
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,67.31,64.77,SL1,LED_A,3V3,,,"/>
-<approved hash="104,1,67.31,62.23,SL1,LED_K,GND,,,"/>
+<approved hash="104,1,74.93,67.31,SL1,LED_A,A,,,"/>
+<approved hash="104,1,74.93,64.77,SL1,LED_K,K,,,"/>
+<approved hash="113,1,60.9177,72.5847,SV1,,,,,"/>
+<approved hash="113,1,60.9177,56.0747,SV2,,,,,"/>
 </errors>
 </schematic>
 </drawing>
